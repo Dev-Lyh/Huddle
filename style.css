@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+
+  font-size: 62.5%;
+}
+h1, h2, h3, h4, h5, h6, button {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: var(--violet);
+  background-image: url('./images/bg-desktop.svg');
+}
+header {
+  margin-top: 3rem;
+  width: 100%;
+  height: 10.2rem;
+  padding: 0 8rem;
+  margin-bottom: 7rem;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8rem;
+}
+section {
+  margin-left: 5.7rem;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 40rem;
+}
+section h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+section p {
+  margin-bottom: 2.5rem;
+  line-height: 2.7rem;
+}
+section button {
+  height: 5.6rem;
+  border-radius: 2.7rem;
+  width: 20rem;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--violet); 
+  background-color: white;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+  transition: .5s all ease-in-out;
+}
+section button:hover {
+  background-color: var(--magenta); 
+  color: white;
+}
